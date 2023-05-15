@@ -1,6 +1,7 @@
 package com.example.latihan;
 
 import android.app.Activity;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import java.util.Arrays;
 
 public class NegaraAdapter extends BaseAdapter {
     TextView text1,text2;
-//    ImageView imgView;
+    ImageView imgView;
     String[][] data;
     Activity activity;
 
@@ -30,17 +31,22 @@ public class NegaraAdapter extends BaseAdapter {
         if(v == null){
             LayoutInflater vi;
             vi = LayoutInflater.from(activity);
-            //R.layout.activity_listviewactivity diganti dengan activity masing-masing yang ada imageview dan text1 dan text2
+            // R.layout.activity_listviewactivity diganti dengan activity masing-masing yang ada imageview dan text1 dan text2
             v = vi.inflate(R.layout.activity_listviewactivity,null);
         }
         Object p = getItem(position);
 
         if (p != null){
+//            imgView = v.findViewById(R.id.imgView);
             text1 = v.findViewById(R.id.text1);
             text2 = v.findViewById(R.id.text2);
 
+//            int id = activity.getResources().getIdentifier(data[position][2],"drawable",activity.getPackageName());
+//            Drawable drawable = activity.getDrawable(id);
+
+//            imgView.setImageDrawable(drawable);
             text1.setText(data[position][0]);
-            text2.setText(data[position][2]);
+            text2.setText(data[position][1]);
 
         }
         return v;
