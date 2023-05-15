@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sample_provinsi">
+        <item>DKI Jakarta</item>
+        <item>Bekasi</item>
+        <item>Wakanda</item>
+        <item>Haran</item>
+        <item>Blobog</item>
+        <item>St. Freya</item>
+    </string-array>
+</resources>
