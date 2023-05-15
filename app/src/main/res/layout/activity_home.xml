@@ -26,6 +26,12 @@
         android:text="Login"
         android:id="@+id/btnLogin"
         />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="List View Activity"
+        android:id="@+id/btnListView"
+        />
 
 
 </LinearLayout>

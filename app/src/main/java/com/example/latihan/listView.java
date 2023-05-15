@@ -12,7 +12,6 @@ import java.util.Map;
 public class listView extends AppCompatActivity {
 
     ListView lvResult;
-    private List<? extends Map<String,?>> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
