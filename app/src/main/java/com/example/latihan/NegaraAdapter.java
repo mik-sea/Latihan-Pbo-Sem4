@@ -30,6 +30,7 @@ public class NegaraAdapter extends BaseAdapter {
         if(v == null){
             LayoutInflater vi;
             vi = LayoutInflater.from(activity);
+            //R.layout.activity_listviewactivity diganti dengan activity masing-masing yang ada imageview dan text1 dan text2
             v = vi.inflate(R.layout.activity_listviewactivity,null);
         }
         Object p = getItem(position);
